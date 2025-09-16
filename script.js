@@ -2,6 +2,8 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const overlay = document.querySelector('.menu-overlay');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const insightCards = document.querySelectorAll('.insights-card');
 
 // Toggle menu function
 function toggleMenu() {
@@ -56,3 +58,22 @@ closeMenu = function() {
   originalCloseMenu();
   preventBodyScroll();
 };
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // remove "active" class from all buttons
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    const category = button.getAttribute('data-filter');
+
+    insightCards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+

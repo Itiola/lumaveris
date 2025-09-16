@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insights | Lumaveris Consulting</title>
+  <title>Insights | Lumaveris</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -40,54 +40,46 @@
   </div>
 </header>
 
-  <section class="articles-section container">
+  <!-- Hero Section -->
+<section class="insights-hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
     <h1>Insights</h1>
-    <p>Our latest thinking on technology, strategy, and business transformation.</p>
+    <p>Actionable perspectives on technology, strategy, and transformation — built to help leaders stay ahead.</p>
+    <a href="#insights" class="hero-btn">Explore Insights</a>
+  </div>
+</section>
 
-    <div class="articles-grid">
-      <article class="article-card">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200" alt="Tech Transformation">
-        <h2>Driving Digital Transformation</h2>
-        <p>Explore how businesses can harness technology to accelerate growth and resilience in a fast-changing world.</p>
-        <a href="article1.html" class="read-more">Read More</a>
-      </article>
 
-      <article class="article-card">
-        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200" alt="Strategy Insights">
-        <h2>Reimagining Strategy in 2025</h2>
-        <p>Why strategy needs to be more adaptive than ever and what leaders can do about it.</p>
-        <a href="article2.html" class="read-more">Read More</a>
-      </article>
+  <div class="insights-filters container">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="technology">Technology</button>
+  <button class="filter-btn" data-filter="strategy">Strategy</button>
+  <button class="filter-btn" data-filter="business">Business</button>
+  </div>
 
-      <article class="article-card">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200" alt="Tech Transformation">
-        <h2>Driving Digital Transformation</h2>
-        <p>Explore how businesses can harness technology to accelerate growth and resilience in a fast-changing world.</p>
-        <a href="article1.html" class="read-more">Read More</a>
-      </article>
 
-      <article class="article-card">
-        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200" alt="Strategy Insights">
-        <h2>Reimagining Strategy in 2025</h2>
-        <p>Why strategy needs to be more adaptive than ever and what leaders can do about it.</p>
-        <a href="article2.html" class="read-more">Read More</a>
-    </article>
-
-    <article class="article-card">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200" alt="Tech Transformation">
-        <h2>Driving Digital Transformation</h2>
-        <p>Explore how businesses can harness technology to accelerate growth and resilience in a fast-changing world.</p>
-        <a href="article1.html" class="read-more">Read More</a>
-      </article>
-
-      <article class="article-card">
-        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200" alt="Strategy Insights">
-        <h2>Reimagining Strategy in 2025</h2>
-        <p>Why strategy needs to be more adaptive than ever and what leaders can do about it.</p>
-        <a href="article2.html" class="read-more">Read More</a>
-    </article>
+  <section id="insights" class="insights-grid container">
+  <article class="insights-card" data-category="technology">
+    <img src="images/insights1.jpg" alt="AI in Business">
+    <div class="insights-content">
+      <h2>AI’s Role in Business Transformation</h2>
+      <p>How artificial intelligence is reshaping industries and creating new opportunities for growth.</p>
+      <a href="insights1.html" class="read-more">Read More →</a>
     </div>
-  </section>
+  </article>
+
+  <article class="insights-card" data-category="strategy">
+    <img src="images/insights2.jpg" alt="Cloud Strategy">
+    <div class="insights-content">
+      <h2>Building a Winning Cloud Strategy</h2>
+      <p>Steps enterprises can take to leverage cloud for scalability, security, and innovation.</p>
+      <a href="insights2.html" class="read-more">Read More →</a>
+    </div>
+  </article>
+
+  <!-- Add more insights cards -->
+</section>
 
    <!-- Footer -->
   <footer>
