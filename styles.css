@@ -224,7 +224,6 @@ h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--tea
 .blog-content a { color: var(--teal); text-decoration: none; font-weight: 600; }
 
 /* Contact Section */
-/* Contact Section */
 #contact {
   background: var(--light-grey);
   padding: 5rem 1rem;
@@ -765,6 +764,58 @@ margin-bottom: 0.8rem;
 }
 
 /* Single Article */
+/* Article Hero */
+.article-hero {
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.article-hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 77, 77, 0.6); /* teal overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-hero-content {
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.article-hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.article-meta {
+  font-size: 0.95rem;
+  color: #ddd;
+  font-style: italic;
+}
+
+.article-body {
+  max-width: 800px;
+  margin: 50px auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.article-body h2 {
+  margin-top: 40px;
+  color: #004d4d;
+}
+
+/* --------------------------
 .single-article {
   margin-top: var(--header-height);
   padding: 3rem 0;
@@ -791,4 +842,172 @@ margin-bottom: 0.8rem;
   line-height: 1.7;
   color: var(--grey);
   margin-bottom: 1rem;
+}
+-------------------------- */
+
+/* --------------------------
+   About Page Styling
+   -------------------------- */
+
+/* Hero section */
+.about-hero {
+  background: linear-gradient(rgba(0,128,128,0.85), rgba(0,79,79,0.85)),
+              url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 6rem 1.5rem 5rem;
+}
+.about-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 0.6rem;
+}
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Story, Mission, Vision, Values */
+.our-story,
+.mission-vision,
+.our-approach,
+.leadership {
+  margin: 4rem auto;
+  max-width: var(--max-width);
+  padding: 0 1rem;
+  text-align: center;
+}
+.our-story p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--grey);
+}
+
+/* Mission / Vision / Values block */
+.mission-vision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 2rem;
+  text-align: left;
+}
+.mv-block {
+  background: var(--light-grey);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+.mv-block h3 {
+  margin-bottom: 0.6rem;
+  color: var(--teal);
+}
+.mv-block p,
+.mv-block ul {
+  font-size: 0.95rem;
+  color: var(--grey);
+}
+.mv-block ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+/* Approach */
+.our-approach ol {
+  margin-top: 1rem;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our-approach li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Leadership */
+.leadership .leader-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+.leader-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.leader-card h3 {
+  color: var(--teal);
+  margin-bottom: 0.3rem;
+}
+.leader-card p {
+  font-size: 0.95rem;
+  color: var(--grey);
+  line-height: 1.5;
+}
+
+/* Call-to-Action */
+.about-cta {
+  background: var(--teal);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.about-cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+.about-cta .cta-btn {
+  background: var(--white);
+  color: var(--teal);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.9rem 1.6rem;
+}
+.about-cta .cta-btn:hover {
+  background: #f4f4f4;
+}
+/* --------------------------
+   Split Sections (About Page)
+   -------------------------- */
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* perfect 50/50 split */
+  align-items: center;
+  margin: 0; 
+  padding: 0;
+}
+
+.split-section .text-block {
+  padding: 4rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--grey);
+}
+
+.split-section .text-block h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--teal);
+  margin-bottom: 1rem;
+}
+
+.split-section .image-block {
+  width: 100%;
+  height: 100%;
+}
+
+.split-section .image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures full cover without distortion */
+  border-radius: 0;  /* sharp edges */
 }
