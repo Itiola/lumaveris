@@ -336,6 +336,26 @@ h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--tea
   font-size: 0.8rem;
   color: var(--teal);
 
+.form-message {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.form-message.success {
+  color: green;
+}
+
+.form-message.error {
+  color: red;
+}
+
+.form-message.fade-out {
+  opacity: 0;
+}
+
+
 /* Contact section mobile improvements */
 @media (max-width: 600px) {
   #contact .section-inner {
