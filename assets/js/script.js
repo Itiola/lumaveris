@@ -90,7 +90,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     messageEl.className = "form-message"; // reset classes
 
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/contact", {
+        const response = await fetch("https://lumaveris.onrender.com/api/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
